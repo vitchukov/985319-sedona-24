@@ -38,15 +38,44 @@
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+            <ul>
+                <li class="filter-option">
+                    <label>
+                        Дата заезда:
+                        <input class="indate" type="text" name="date" value="" placeholder="24 апреля 2017">
+                    </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        Дата выезда:
+                        <input class="outdate" type="text" name="date" value="" placeholder="4 июля 2017">
+                    </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        Взрослые:
+                        <input class="adult" type="num" name="adult" value="" placeholder="2">
+                    </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        Дети:
+                        <input class="childrens" type="num" name="childrens" value="" placeholder="0">
+                    </label>
+                </li>
+                <button class="button" type="submit" value="">Найти</button>
+            </ul>
+
+        </form>
     </section>
 </main>
 <footer class="main-footer">
     <a href="https://htmlacademy.ru/intensive/htmlcss">#visitSEDONA</a>
     <ul class="footer-social">
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="#">Седона в Твиттер</a></li>
+        <li><a class="social-button" href="#">Седона в Фейсбук</a></li>
+        <li><a class="social-button" href="#">Седона в Ютуб</a></li>
     </ul>
     <p class="footer-copyright">
         <span>Website by</span>
