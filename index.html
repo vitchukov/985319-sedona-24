@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Седона — небольшой городок в Аризоне</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -37,40 +40,41 @@
         <p class="search-hotels-text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
+        <button class="button-search" type="button" name="search-hotel">Поиск гостиницы в Седоне</button>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+
             <ul>
                 <li class="filter-option">
                     <label>
                         Дата заезда:
-                        <input class="indate" type="text" name="date" value="" placeholder="24 апреля 2017">
+                        <input class="indate" type="text" name="date" value="24 апреля 2017" placeholder="24 апреля 2017">
                     </label>
                 </li>
                 <li class="filter-option">
                     <label>
                         Дата выезда:
-                        <input class="outdate" type="text" name="date" value="" placeholder="4 июля 2017">
+                        <input class="outdate" type="text" name="date" value="4 июля 2017" placeholder="4 июля 2017">
                     </label>
                 </li>
                 <li class="filter-option">
                     <label>
                         Взрослые:
-                        <input class="adult" type="number" name="adult" value="" placeholder="2">
+                        <input class="adult" type="number" name="adult" value="2" placeholder="2">
                     </label>
                 </li>
                 <li class="filter-option">
                     <label>
                         Дети:
-                        <input class="childrens" type="number" name="childrens" value="" placeholder="0">
+                        <input class="childrens" type="number" name="childrens" value="0" placeholder="0">
                     </label>
                 </li>
             </ul>
-            <button class="button" type="submit" value="">Найти</button>
+            <button class="button-search-hotel" type="submit" value="">Найти</button>
         </form>
     </section>
 </main>
 <footer class="main-footer">
-    <a href="https://htmlacademy.ru/intensive/htmlcss">#visitSEDONA</a>
+    <a class="footer-tag" href="https://htmlacademy.ru/intensive/htmlcss">#visitSEDONA</a>
     <ul class="footer-social">
         <li><a class="social-button" href="#">Седона в Твиттер</a></li>
         <li><a class="social-button" href="#">Седона в Фейсбук</a></li>
