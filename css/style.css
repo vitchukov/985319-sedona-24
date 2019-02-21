@@ -70,9 +70,10 @@ input[type="radio"].visually-hidden {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 500px;
     margin: 0;
     padding: 0;
+    margin-left: 72px;
     list-style: none;
 
 }
@@ -80,16 +81,23 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-right {
     justify-content: flex-end;
+    margin-right: 72px;
 }
 
 
 .site-navigation a {
     display: block;
-    width: 239px;
-    padding: 16px 0;
-    text-align: center;
+    width: 241px;
+    padding: 14px 0;
+    padding-bottom: 17px;
+    text-align: left;
     vertical-align: middle;
     color: #000000;
+}
+
+.site-navigation-right a {
+    width: 243px;
+    text-align: right;
 }
 
 .site-navigation a:hover,
@@ -121,7 +129,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/intro-mask.svg"),
     url("../img/background-photo.jpg");
     background-position: center 473px,
-    center -63px;
+    center -61px;
     margin-bottom: 60px;
     background-repeat: no-repeat;
 
@@ -129,11 +137,11 @@ input[type="radio"].visually-hidden {
 
 .welcome img {
     display: block;
-    margin: 95px auto;
+    margin: 96px auto;
 }
 
 .features {
-    margin-bottom: 55px;
+    margin-bottom: 49px;
     text-align: center;
 
 }
@@ -146,6 +154,9 @@ input[type="radio"].visually-hidden {
 .features h1 {
     display: block;
     width: 576px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 27px;
     font-size: 21px;
     text-align: center;
     line-height: 26px;
@@ -154,11 +165,12 @@ input[type="radio"].visually-hidden {
 .features-text {
     display: block;
     width: 576px;
-    padding-top: 10px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     text-align: center;
     line-height: 26px;
-    margin-bottom: 55px;
+    margin-bottom: 51px;
 }
 
 .features-items {
@@ -304,28 +316,32 @@ input[type="radio"].visually-hidden {
 .search-hotels {
     width: 568px;
     margin: 0 auto;
-    margin-bottom: 55px;
+
     text-align: center;
 }
 
 .search-hotels-question {
     display: block;
+    width: 568px;
+    margin: 0 auto;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     line-height: 36px;
 }
 
 .search-hotels-text {
     display: block;
+    width: 568px;
+    margin: 0 auto;
     font-size: 14px;
     text-align: center;
-    line-height: 26px;
-    margin-bottom: 45px;
+    line-height: 24px;
+    margin-bottom: 48px;
 }
 
 .button-search {
-    width: 570px;
+    width: 568px;
     padding: 30px 0;
     font: inherit;
     text-align: center;
@@ -349,11 +365,16 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
+    display: block;
     box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
     margin: 0;
     padding: 0;
     width: 568px;
+    margin: 0 auto;
     padding-top: 55px;
+    background: white;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     }
 
@@ -626,15 +647,24 @@ input[type="radio"].visually-hidden {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.map {
+    position: absolute;
+    width: 1200px;
+    height: 594px;
+    background-image: url("../img/map.jpg");
+
+}
 
 .main-footer {
+    position: relative;
     display: flex;
     justify-content: space-around;
+    z-index: 3;
     align-items: center;
     flex-wrap: wrap;
     min-height: 120px;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin-top: 36px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 474px;
 }
 
 .footer-tag {
