@@ -10,8 +10,8 @@
     <style>
         HTML {
             background-repeat: no-repeat;
-            background-position:  50% 0;
-            background-image: url( "img/sedona-index.jpg" );
+            background-position: 50% 0;
+            background-image: url("img/sedona-index.jpg");
         }
     </style>
     <script src="js/pp-script.js"></script>
@@ -41,10 +41,10 @@
         </p>
         <section class="features">
             <div class="features-intro">
-            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <p class="features-text">
-                Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-            </p>
+                <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <p class="features-text">
+                    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                </p>
             </div>
             <ul class="features-items">
                 <li class="features-item">
@@ -70,9 +70,9 @@
                 <li class="features-item">
                     <div class="features-photo"></div>
                     <div class="features-container">
-                    <h3>Там есть Мост дьявола</h3>
-                    <span>— №2 —</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        <h3>Там есть Мост дьявола</h3>
+                        <span>— №2 —</span>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </li>
                 <li class="features-item">
@@ -88,7 +88,7 @@
                 <li class="features-item">
                     <h3>Мало туристов</h3>
                     <span>— №5 —</span>
-                    <p>Большинство едет в гранд каньон    и толпится там</p>
+                    <p>Большинство едет в гранд каньон и толпится там</p>
                 </li>
 
             </ul>
@@ -105,8 +105,7 @@
                 <ul>
                     <li class="filter-option">
                         <label for="indate">Дата заезда: </label>
-                        <input id="indate" class="indate" type="text" name="date" value="24 апреля 2017"
-                               placeholder="24 апреля 2017">
+                        <input id="indate" class="indate" type="text" name="indate" value="24 апреля 2017" placeholder="24 апреля 2017" required>
                         <button type="button" class="button-calendar button-indate">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -116,8 +115,8 @@
                     </li>
                     <li class="filter-option">
                         <label for="outdate">Дата выезда:</label>
-                        <input id="outdate" class="outdate" type="text" name="date" value="4 июля 2017"
-                               placeholder="4 июля 2017">
+                        <input id="outdate" class="outdate" type="text" name="outdate" value="4 июля 2017"
+                               placeholder="4 июля 2017" required>
                         <button type="button" class="button-calendar button-outdate">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -130,7 +129,7 @@
                             Взрослые:</label>
                         <div class="container-buttons">
                             <button type="button" class="button-minus">–</button>
-                            <input id="adult" class="adult" type="number" name="adult" value="2" placeholder="2">
+                            <input id="adult" class="adult" type="number" name="adult" value="2" placeholder="2" required>
                             <button type="button" class="button-plus">+</button>
                         </div>
                         <label for="childrens">
@@ -146,7 +145,10 @@
                 <button class="button-search-hotel" type="submit" value="">Найти</button>
             </form>
         </section>
-        <section class="map"><h2 class="visually-hidden">Карта штата</h2><a id="mapstate"></a></section>
+        <section class="map"><h2 class="visually-hidden">Карта штата</h2><a id="mapstate"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837861.299624447!2d-111.64591295073973!3d34.89524377564064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1550817567027"
+                    width="1200" height="594" style="border:0" allowfullscreen></iframe>
+        </section>
     </main>
     <footer class="main-footer container">
         <a class="footer-tag" href="https://htmlacademy.ru/intensive/htmlcss">#visitSEDONA</a>
@@ -185,6 +187,49 @@
         </p>
     </footer>
 </div>
+<script>
+    var link = document.querySelector(".button-search");
+    var popup = document.querySelector(".filter");
+    var form = popup.querySelector(".button-search-hotel");
+    var indate = popup.querySelector("[name=indate]");
+    var outdate = popup.querySelector("[name=outdate]");
+    var adult = popup.querySelector("[name=adult]");
+    var childrens = popup.querySelector("[name=outdate]");
+    var isStorageSupport = true;
+    var storageAdult = "";
+    var storageChildrens = "";
 
+    try {
+        storageAdult = localStorage.getItem("adult");
+        storageChildrens = localStorage.getItem("childrens");
+    } catch (err) {
+        isStorageSupport = false;
+    }
+
+
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.toggle("filter-show");
+        indate.focus()
+        if (storageAdult) {
+            adult.value = storageAdult;
+        }
+        if (storageChildrens) {
+            childrens.value = storageChildrens;
+        }
+         });
+
+    form.addEventListener("submit", function (evt) {
+        if (!indate.value || !outdate.value || !adult.value) {
+            evt.preventDefault();
+            console.log("Нужно выбрать даты и количество взрослых");
+        } else {
+            if (isStorageSupport) {
+                localStorage.setItem("adult", adult.value);
+                localStorage.setItem("childrens", childrens.value);
+            }
+        }
+    });
+</script>
 </body>
 </html>
