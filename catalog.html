@@ -5,7 +5,7 @@
     <title>Седона — небольшой городок в Аризоне</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
     <!-- Pixel Glass catalog -->
     <style>
         HTML {
@@ -45,7 +45,7 @@
                     <ul>
                         <li class="inner-filter-option">
                             <input class="visually-hidden inner-filter-checkbox" type="checkbox" name="poll"
-                                   id="poll">
+                                   id="poll" checked>
                             <label for="poll">Бассейн</label>
                         </li>
                         <li class="inner-filter-option">
@@ -65,17 +65,17 @@
                     <ul>
                         <li class="inner-filter-option">
                             <input class="visually-hidden inner-filter-checkbox" type="checkbox" name="hotel"
-                                   id="hotel">
+                                   id="hotel" checked>
                             <label for="hotel">Гостиница</label>
                         </li>
                         <li class="inner-filter-option">
                             <input class="visually-hidden inner-filter-checkbox" type="checkbox" name="motel"
-                                   id="motel">
+                                   id="motel" checked>
                             <label for="motel">Мотель</label>
                         </li>
                         <li class="inner-filter-option">
                             <input class="visually-hidden inner-filter-checkbox" type="checkbox" name="apartments"
-                                   id="apartments">
+                                   id="apartments" checked>
                             <label for="apartments">Апартаменты</label>
                         </li>
                     </ul>
@@ -102,18 +102,17 @@
         </section>
         <section class="sorting">
             <h2 class="visually-hidden">Сортировка поиска</h2>
-            <div class="sorting-search">Найдено:</div>
-            <div class="sorting-search sorting-search-quant">3</div>
+            <div class="sorting-search">Найдено: 3</div>
             <ul class="sorting-elements">
                 <li>Сортировка:</li>
-                <li class="sorting-button" >
-                    <a class="sorting-active" href="">По цене</a>
+                <li class="sorting-button sorting-active" >
+                    <a href="">По цене</a>
                 </li>
-                <li class="sorting-button">
-                    <a class="sorting-button-type" href="">По типу</a>
+                <li class="sorting-button sorting-button-type">
+                    <a href="">По типу</a>
                 </li>
-                <li class="sorting-button ">
-                    <a class="sorting-button-rating" href="">По рейтингу</a>
+                <li class="sorting-button sorting-button-rating">
+                    <a href="">По рейтингу</a>
                 </li>
                 <li class="sorting-arrow ">
                     <a class="sorting-up" href=""><span class="visually-hidden">По возрастанию</span>
