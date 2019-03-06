@@ -1054,14 +1054,27 @@ input[type="radio"].visually-hidden {
     fill: #81b3d2;
 }
 
-.sorting-arrow:hover path,
-.sorting-arrow:focus path {
+.sorting-up:hover path,
+.sorting-up:focus path {
     border: none;
     fill-opacity: 1;
     fill: black;
 }
 
-.sorting-arrow:active path {
+.sorting-up:active path {
+    border: none;
+    fill-opacity: 1;
+    fill: #81b3d2;
+}
+
+.sorting-down:hover path,
+.sorting-down:focus path {
+    border: none;
+    fill-opacity: 1;
+    fill: black;
+}
+
+.sorting-down:active path {
     border: none;
     fill-opacity: 1;
     fill: #81b3d2;
