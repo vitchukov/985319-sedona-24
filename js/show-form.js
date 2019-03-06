@@ -16,6 +16,10 @@ try {
     isStorageSupport = false;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    popup.classList.add("filter-show");
+})
+
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
