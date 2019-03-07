@@ -38,6 +38,7 @@ input[type="radio"].visually-hidden {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
     box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
     background-color: #ffffff;
 }
@@ -51,7 +52,11 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -62,10 +67,15 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 338px;
+    width: 480px;
     margin: 0;
     padding: 0;
     margin-left: 72px;
@@ -74,16 +84,27 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-right {
     margin-right: 72px;
-    width: 328px;
+    width: 484px;
+    text-align: right;
+}
+
+
+.site-navigation li {
+    width: 230px;
+    padding-right: 10px;
+    margin-bottom: 17px;
+    margin-top: 12px;
 }
 
 .site-navigation a {
-    display: block;
-    margin-bottom: 17px;
-    margin-top: 14px;
     text-align: left;
     vertical-align: middle;
     color: #000000;
+}
+
+.site-navigation-right li {
+    padding: 0;
+    padding-left: 10px;
 }
 
 .site-navigation-right a {
@@ -155,6 +176,7 @@ input[type="radio"].visually-hidden {
     width: 576px;
     margin: 0;
     padding: 0;
+    color: #333333;
     font-size: 14px;
     text-align: center;
     line-height: 26px;
@@ -164,8 +186,13 @@ input[type="radio"].visually-hidden {
 .features-items {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -179,8 +206,13 @@ input[type="radio"].visually-hidden {
 }
 
 .features-wide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -226,6 +258,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     width: 400px;
     min-height: 330px;
+    color: #333333;
 }
 
 .features-life h3 {
@@ -288,6 +321,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 0;
     width: 270px;
+    color: #333333;
     margin-bottom: 21px;
     font-size: 14px;
     line-height: 21px;
@@ -317,6 +351,7 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 568px;
     margin: 0 auto;
+    color: #333333;
     font-size: 14px;
     text-align: center;
     line-height: 24px;
@@ -349,6 +384,7 @@ input[type="radio"].visually-hidden {
 
 .filter {
     display: block;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     z-index: 2;
@@ -358,6 +394,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding-top: 55px;
     background: white;
+    -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
@@ -405,13 +442,20 @@ input[type="radio"].visually-hidden {
 .filter ul {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .filter-option {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -422,7 +466,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 101px;
     margin-right: 10px;
@@ -503,7 +551,10 @@ input[type="radio"].visually-hidden {
 }
 
 .container-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 114px;
     height: 38px;
@@ -564,8 +615,13 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     padding: 27px 72px;
@@ -583,6 +639,8 @@ input[type="radio"].visually-hidden {
 
 .hotel-info {
     padding-left: 30px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
@@ -590,6 +648,7 @@ input[type="radio"].visually-hidden {
 .hotels-item-price {
     margin: 0;
     padding: 0;
+    color: #333333;
 }
 
 .button-more,
@@ -624,6 +683,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     display: inline-block;
+    vertical-align: top;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -642,15 +702,25 @@ input[type="radio"].visually-hidden {
 .container-hotel-info {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 258px;
 }
 
 .hotels-item .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 42px;
     width: 112px;
@@ -750,8 +820,13 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-filter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     min-height: 217px;
     margin: 0;
@@ -818,7 +893,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: -2px;
-    left: -40px;
+    left: -41px;
     width: 25px;
     height: 25px;
     background-image: url("../img/checkbox-on.svg");
@@ -925,6 +1000,7 @@ input[type="radio"].visually-hidden {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
@@ -962,7 +1038,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 71px;
     padding-right: 70px;
@@ -978,10 +1057,27 @@ input[type="radio"].visually-hidden {
     margin-right: 5px;
 }
 
+.sorting h2 {
+    margin: 0;
+    padding: 0;
+    width: 105px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    padding-right: 10px;
+}
+
 .sorting-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 892px;
+    width: 776px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -993,11 +1089,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-elements li {
-    width: 82px;
-}
-
-.sorting-elements li:first-child {
-    margin-right: 32px;
+    width: 71px;
+    padding-right: 10px;
 }
 
 .sorting-button a {
@@ -1010,7 +1103,11 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px dotted rgba(129, 179, 210, 1);
 }
 
-.sorting-elements .sorting-active a{
+.sorting-elements .sorting-button-rating {
+    width: 80px;
+}
+
+.sorting-active a{
     opacity: 1;
     color: #81b3d2;
     border: none;
@@ -1029,7 +1126,12 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-elements .sorting-arrow {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     margin-left: auto;
 }
@@ -1082,10 +1184,17 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     z-index: 3;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     /*min-height: 120px;*/
     background-color: rgba(255, 255, 255, 0.9);
@@ -1106,8 +1215,13 @@ input[type="radio"].visually-hidden {
 .footer-social {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 300px;
     margin-right: 99px;
@@ -1115,9 +1229,16 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 46px;
     height: 48px;
@@ -1175,7 +1296,7 @@ input[type="radio"].visually-hidden {
     fill: #bdbbbc;
 }
 
-body .inner-footer {
+.inner-footer {
     margin-top: 0px;
     padding: 35px 0;
     padding-left: 132px;

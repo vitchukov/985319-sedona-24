@@ -16,7 +16,7 @@ try {
     isStorageSupport = false;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     popup.classList.add("filter-show");
 })
 
